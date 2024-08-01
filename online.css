@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1f1f1f;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 160px;
+    height: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #00f;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: #141e30;
+    background: -webkit-linear-gradient(to right, #243b55, #141e30);
+    background: linear-gradient(to right, #243b55, #141e30);
+    }
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+    font-size: 70px;
+    font-family: "Alfa Slab One", serif;
+    margin: 0;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-shadow: 4px 4px 10px #000;
+    text-align: center;
+    margin-left: 350px;
+    margin-bottom: 40px;
+}
+
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.banner-text p {
+    font-size: 20px;
+    font-family: "Racing Sans One", sans-serif;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-shadow: 4px 4px 10px #000;
+    max-width: 250px;
+    margin-left: 400px;
+    margin-bottom: 200px;
+}
+
+.racing-sans-one-regular {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.most-picked {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+}
+
+.most-picked h1 {
+    font-size: 2.5em;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.course-card {
+    display: flex;
+    align-items: center;
+    background: #2b2b2b;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+}
+
+.course-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.course-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.course-info h2 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.course-info p {
+    font-size: 1.2em;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #1f1f1f;
+}
+
+.course {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    text-align: center;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course ul li {
+    margin: 10px 0;
+}
+
+.course ul li span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit {
+    background: #00f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background: #0053ba;
+}
+
+.level-button {
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 5px;
+}
+
+.level-button:hover {
+    background: #555;
+}
+
+.level-button.selected {
+    background: #00f;
+    color: white;
+}
+
+.banner_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    font-family: "Alfa Slab One", serif;
+    margin: 0;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-shadow: 4px 4px 10px #000;
+}

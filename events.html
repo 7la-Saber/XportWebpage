@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="homepage.html" target="_blank"><img src="light-logo.gif" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="community.html">community</a></li>
+                <li><a href="#" class="active">events</a></li>
+                <li><a href="online.html">online classes</a></li>
+                <li><a href="#">store</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-one">
+            <div class="content">
+                <h1>we provide events to improve your experience</h1>
+                <div class="images">
+                    <div class="image-container">
+                        <img src="cycling.jpeg" alt="cycle">
+                    </div>
+                    <div class="image-container overlapping">
+                        <img src="football.jpeg" alt="football">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-two">
+            <div class="content">
+                <h2>upcoming events!!</h2>
+                <div class="description">
+                    <div class="circle-container">
+                        <img src="crowd.jpg" alt="Running Event">
+                    </div>
+                    <p>Gear up for an exciting season of sports! From thrilling football championships and intense
+                        basketball league matches to our annual tennis tournament and exhilarating track and field
+                        events, there's something for every sports enthusiast. Join us and experience the
+                        adrenaline-fueled action as top athletes compete for glory. Mark your calendars and don't miss
+                        out on the fun!</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="search for our events" id="searchInput" onkeyup="showSuggestions()">
+                    <button><i class="fas fa-search"></i></button>
+                    <div class="dropdown-content" id="suggestions">
+                        <a href="#">Football Championship</a>
+                        <a href="#">Basketball League</a>
+                        <a href="#">Tennis Tournament</a>
+                        <a href="#">Track and Field Event</a>
+                        <a href="#">Marathon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="team-info">
+                <p>made by Team Nabghah</p>
+                <ul>
+                    <li>Habiba </li>
+                    <li>Hla</li>
+                    <li>Mariam</li>
+                    <li>Rokia</li>
+                    <li>Andrew</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <p>To contact us:</p>
+                <p>098765432234567</p>
+                <p>123456789098765</p>
+            </div>
+        </footer>
+        </div>
+    </main>
+    <script src="events.js"></script>
+</body>
+
+</html>

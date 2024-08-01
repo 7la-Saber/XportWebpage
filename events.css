@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000428, #004e92);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #002140;
+    margin-bottom: 10px;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 160px;
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a.active {
+    color: #ffcc00; 
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    color: #ffcc00; 
+}
+
+main {
+    padding: 20px;
+}
+
+.section-one, .section-two {
+    margin-bottom: 40px;
+}
+
+.section-one .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: fadeIn 2s;
+    margin: 40px;
+}
+
+.section-one h1 {
+    font-size: 36px;
+    margin: 0;
+    flex: 1;
+    animation: slideInFromLeft 1.5s;
+    max-width: 20%;
+    text-align: center;
+    font-family: "Racing Sans One", sans-serif;
+}
+
+.section-one .images {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    animation: slideInFromRight 1.5s;
+    margin-bottom: 150px;
+}
+
+.section-one .image-container {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section-one .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.section-one .image-container:hover {
+    transform: scale(1.05);
+}
+
+.section-one .image-container.overlapping {
+    top: 190px;
+    left: 240px;
+    z-index: 1;
+}
+
+.section-two .content {
+    text-align: center;
+    animation: fadeIn 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-two h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1.5s;
+    font-family: "Racing Sans One", sans-serif;
+}
+
+.section-two .description {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: slideInFromRight 1.5s;
+}
+
+.section-two .circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section-two .circle-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    background: #004e92;
+    border-radius: 80%;
+    z-index: -1;
+}
+
+.section-two .circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #004e92;
+    transition: transform 0.3s ease;
+}
+
+.section-two .circle-container img:hover {
+    transform: scale(1.05);
+}
+
+.section-two .description p {
+    max-width: 450px;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+
+}
+
+.section-two .search-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.section-two .search-bar input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.section-two .search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #004e92;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-two .search-bar button:hover {
+    background-color: #003366;
+}
+
+.section-two .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 50px;
+    left: 0;
+}
+
+.section-two .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.section-two .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.section-two .search-bar input:focus + .dropdown-content,
+.section-two .dropdown-content:hover {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid white;
+}
+
+footer .team-info {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .team-info ul {
+    list-style:circle;
+    padding: 0;
+}
+
+footer .team-info ul li {
+    margin: 5px 0;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact p {
+    margin: 5px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
